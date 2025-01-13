@@ -27,6 +27,7 @@ img {
 }
 .form-control {
   cursor: auto;
+  background-color: hsl(138, 92%, 50%);					
 }
 .img-thumbnail {
   max-height: 320px;
