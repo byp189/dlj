@@ -8,11 +8,11 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/byp189/dlj/styles.css">
 </head>
 <body>
-
-		
+  <div class="d-flex align-items-start flex-wrap">
   <div class="card shadow m-3">
     <h5 class="card-header">CJDL</h5>
     <div class="card-body">
+      <h5 class="card-title"> </h5>
 
       <div class="input-group mb-3">
 
@@ -32,13 +32,43 @@
         <button class="btn btn-primary" type="button" onclick='shorturl()' id="addBtn">Shorten it</button>
       </div>
 
+      <div class="input-group mb-3">
 
+          <span class="input-group-text" id="basic-addon3">password</span>
+
+        <input class="form-control" type="text" value="__PASSWORD__" readonly="true" id="passwordText" aria-describedby="basic-addon3">
+      </div>
 
     </div>
     
+    <div class="card-footer">
+      <span> <a href="www.baidu.com" target="_self">baidu</a> </span>
+    </div>
   </div>
 
+  <div class="card shadow m-3">
+    <div class="card-body">
+      <h5 class="card-title"> </h5>
+      <div class="input-group mb-3">
+        <button class="btn btn-danger" type="button" onclick='clearLocalStorage()' id="clearlocalStgBtn">clear localStorage</button>
+      </div>
 
+      <div class="card-text">
+        <div classs="list-group" id="urlList">
+          <div class="mb-3 list-group-item">
+            <div class="input-group">
+              <button type="button" class="btn btn-danger" onclick='deleteShortUrl("4sure")' id="delBtn-4sure">X</button>
+              <button type="button" class="btn btn-info" onclick='queryVisitCount("4sure")' id="qryCntBtn-4sure">?</button>
+              <span class="form-control">baidu.com</span>
+            </div>
+            <div class="form-control">
+              www.baidu.com
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   </div>
 
   <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel" aria-hidden="true">
